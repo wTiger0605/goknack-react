@@ -11,7 +11,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <CreatorFans/>
+        <Switch>
+          <Route path="/">
+            <CreatorFans/>
+          </Route>
+          <Route path="/pricing">
+            <Pricing/>
+          </Route>
+        </Switch>
         <Footer />
       </div>
     );
