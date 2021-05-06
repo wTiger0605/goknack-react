@@ -13,12 +13,14 @@ class App extends Component {
         <Header />
         <VerticalMark />
         <Switch>
-          <Route path="/">
+          {/* <Route path="/">
             <CreatorFans/>
           </Route>
           <Route path="/pricing">
             <Pricing/>
-          </Route>
+          </Route> */}
+          <Route path="/" component={CreatorFans} exact />
+          <Route path="/pricing" component={Pricing} />
         </Switch>
         <Footer />
       </div>
